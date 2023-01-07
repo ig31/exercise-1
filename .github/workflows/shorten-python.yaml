@@ -1,0 +1,26 @@
+---
+name: shorten-python
+
+on:
+  push:
+
+jobs:
+  run-shorten-python-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Tests
+        run: python -m unittest -v test_shorten.py
+
+  run-shorten-python:
+    needs: run-shorten-python-tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Shorten URLs
+        run: |
+          ./shorten.py
+          echo "Shortened URLs:"
+          cat urls_short.txt

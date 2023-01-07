@@ -1,0 +1,17 @@
+---
+name: shorten-bash
+
+on:
+  push:
+
+jobs:
+  run-shorten-bash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Shorten URLs
+        run: |
+          ./shorten.sh
+          echo "Shortened URLs:"
+          cat urls_short.txt
