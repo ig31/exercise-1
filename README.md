@@ -46,6 +46,8 @@ Shortened URLs will be saved to a file named `urls_short.txt` at the root of the
 
 [![shorten-bash](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash.yaml)
 
+Requires Bash 4 or later and `jq`.
+
 #### Run locally
 
 ```bash
@@ -53,6 +55,8 @@ Shortened URLs will be saved to a file named `urls_short.txt` at the root of the
 ```
 
 ### Python
+
+Requires Python 3; tested on 3.10.6.
 
 [![shorten-python](https://github.com/ig31/exercise-1/actions/workflows/shorten-python.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-python.yaml)
 
