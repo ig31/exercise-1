@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import argparse
 import json
 from urllib import parse, request
 
@@ -30,4 +31,11 @@ def shorten_urls(infile: str = "urls_long.txt", outfile: str = "urls_short.txt")
 
 
 if __name__ == "__main__":
-    shorten_urls()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--infile", type=str, required=False)
+    args = parser.parse_args()
+
+    if args.infile:
+        shorten_urls(infile=args.infile)
+    else:
+        shorten_urls()
