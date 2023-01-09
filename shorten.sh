@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-readarray -t arr < urls_long.txt
+INFILE="${1:-urls_long.txt}"
+
+readarray -t arr < "$INFILE"
 
 for long_url in "${arr[@]}"
 do

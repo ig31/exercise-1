@@ -36,6 +36,10 @@ git clone https://github.com/ig31/exercise-1.git && cd exercise-1
 
 Alternatively, click on the status badges below for `shorten-bash`, `shorten-python`, and `lint` workflows to see output in GitHub Actions.
 
+For both solutions, the input file `urls_long.txt` will be used by default. See instructions below on how to specify a different input file.
+
+Shortened URLs will be saved to a file named `urls_short.txt` at the root of the repository.
+
 ### Bash
 
 [![shorten-bash](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash%20copy.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash%20copy.yaml)
@@ -43,7 +47,7 @@ Alternatively, click on the status badges below for `shorten-bash`, `shorten-pyt
 #### Run locally
 
 ```bash
-./shorten.sh
+./shorten.sh </full/path/to/file.txt>
 ```
 
 ### Python
@@ -53,7 +57,7 @@ Alternatively, click on the status badges below for `shorten-bash`, `shorten-pyt
 #### Run locally
 
 ```bash
-./shorten.py
+./shorten.py --infile=</full/path/to/file.txt>
 ```
 
 #### Run tests locally
