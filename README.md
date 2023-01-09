@@ -38,7 +38,7 @@ Alternatively, click on the status badges below for `shorten-bash`, `shorten-pyt
 
 ### Bash
 
-[![shorten-bash](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash%20copy.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash%20copy.yaml)
+[![shorten-bash](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-bash.yaml)
 
 #### Run locally
 
