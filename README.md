@@ -36,7 +36,9 @@ git clone https://github.com/ig31/exercise-1.git && cd exercise-1
 
 Alternatively, click on the status badges below for `shorten-bash`, `shorten-python`, and `lint` workflows to see output in GitHub Actions.
 
-For both solutions, the input file `urls_long.txt` will be used by default. See instructions below on how to specify a different input file.
+For both solutions, the file `urls_long.txt` containing the six provided URLs will be used as the default input file.
+See examples below on how to optionally specify a different input file containing any number of URLs to shorten.
+When specifying a alternate input file, the fully-qualified file path must be used.
 
 Shortened URLs will be saved to a file named `urls_short.txt` at the root of the repository.
 

@@ -32,7 +32,7 @@ def shorten_urls(infile: str = "urls_long.txt", outfile: str = "urls_short.txt")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--infile', type=str, required=False)
+    parser.add_argument("--infile", type=str, required=False)
     args = parser.parse_args()
 
     if args.infile:
