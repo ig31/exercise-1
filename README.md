@@ -56,9 +56,9 @@ Requires Bash 4 or later and `jq`.
 
 ### Python
 
-Requires Python 3; tested on 3.10.6.
-
 [![shorten-python](https://github.com/ig31/exercise-1/actions/workflows/shorten-python.yaml/badge.svg)](https://github.com/ig31/exercise-1/actions/workflows/shorten-python.yaml)
+
+Requires Python 3; tested on 3.10.6.
 
 #### Run locally
 
