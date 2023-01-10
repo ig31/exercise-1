@@ -6,6 +6,7 @@ readarray -t arr < "$INFILE"
 
 for long_url in "${arr[@]}"
 do
+   sleep .5
    response=$(curl -s -XPOST --data-urlencode "url=$long_url" 'https://cleanuri.com/api/v1/shorten')
    printf '%b\n' "$response" | jq -r '.result_url' >> urls_short.txt
 done
