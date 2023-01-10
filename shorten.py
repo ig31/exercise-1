@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from time import sleep
 from urllib import parse, request
 
 
@@ -24,7 +25,10 @@ def shorten_urls(infile: str = "urls_long.txt", outfile: str = "urls_short.txt")
     with open(infile) as f:
         long_urls = [line.strip() for line in f]
 
-    short_urls = [shorten_url(url) for url in long_urls]
+    short_urls = []
+    for url in long_urls:
+        short_urls.append(shorten_url(url))
+        sleep(0.5)
 
     with open(outfile, "w") as f:
         [f.write(url + "\n") for url in short_urls]

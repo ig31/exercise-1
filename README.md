@@ -106,3 +106,8 @@ The linting workflow uses the GitHub [super-linter](https://github.com/github/su
 
 - Gitleaks
 - jscpd
+
+## Potential optimizations
+
+- Exponential backoff and jitter for HTTP requests (e.g. with [`backoff`](https://pypi.org/project/backoff/) package)
+- Put URLs on a queue and multiprocess them
